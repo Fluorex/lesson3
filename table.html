@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our company</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>one</th>
+        <th>two</th>
+        <th>three</th>
+
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+
+
+    </tr>
+    <tr></tr>
+    <tr></tr>
+
+  <div> <tr>
+        <th>Person 1</th>
+        <th col                                  span="2">Person 2</th>
+        <th>Person 3</th>
+    </tr>
+    <tr>
+        <td>Emil</td>
+        <td>Tobias</td>
+        <td>Linus</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>14</td>
+        <td>10</td>
+    </tr>
+  </div>
+
+
+    <div>
+        <thead>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>Sum</td>
+            <td>$180</td>
+        </tr>
+        </tfoot>
+
+
+    </div>
+
+    <form>
+        <p>Please select your preferred contact method:</p>
+        <div>
+            <input type="radio" id="contactChoice1"
+                   name="contact" value="email">
+            <label for="contactChoice1">Email</label>
+
+            <input type="radio" id="contactChoice2"
+                   name="contact" value="phone">
+            <label for="contactChoice2">Phone</label>
+
+            <input type="radio" id="contactChoice3"
+                   name="contact" value="mail">
+            <label for="contactChoice3">Mail</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+        <input name="flevel" id="flying" type="range" min="100" max="10000" value="100" step="10">
+        <output for="flying" name="level">100</output>
+    </form>
+<div>
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20*size;
+        }
+    </script>
+    <p>Размер рисунка: <input type="range" min="1" max="5" id="size"
+                              oninput="sizePic()" value="3"></p>
+    <p><img src="https://skolko-serij.ru/wp-content/uploads/2021/01/387624-717x1024.jpg" alt="" id="pic"></p>
+</div>
+
+
+
+</table>
+
+<table>
+    <tr>
+        <td>&nbsp;</td>
+        <td>Knocky</td>
+        <td>Flor</td>
+        <td>Ella</td>
+        <td>Juan</td>
+    </tr>
+    <tr>
+        <td>Breed</td>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>Owner</td>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+    </tr>
+    <tr>
+        <td>Eating Habits</td>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+    </tr>
+</table>
+
+<div><input type="text"> </div>
+
+<div><input type="radio" name="reoly"> </div>
+
+</body>
+</html>
